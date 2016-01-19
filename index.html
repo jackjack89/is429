@@ -159,7 +159,7 @@ Please consider reviewing the applications of:
   var myApp = angular.module("myApp", ["firebase"]);
   myApp.controller('userController', ['$scope', '$firebase',
     function($scope, $firebase) {
-    $scope.newuser = {uid:'new'};
+    $scope.newuser = {};
     
     // Here is where you update your Firebase URL. 
     var theFirebaseURL = "https://my-fourth-app.firebaseio.com/";
@@ -204,7 +204,7 @@ Please consider reviewing the applications of:
         if (id == 'new') {
             $scope.edit = true;
             $scope.incomplete = true;
-            $scope.newuser = {};
+            $scope.newuser = {uid:'new'};
             console.log("new feedback.");
         } else {
             $scope.edit = true;
