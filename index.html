@@ -159,7 +159,7 @@ Please consider reviewing the applications of:
   var myApp = angular.module("myApp", ["firebase"]);
   myApp.controller('userController', ['$scope', '$firebase',
     function($scope, $firebase) {
-    $scope.newuser = {};
+    $scope.newuser = {uid:'new'};
     
     // Here is where you update your Firebase URL. 
     var theFirebaseURL = "https://my-fourth-app.firebaseio.com/";
